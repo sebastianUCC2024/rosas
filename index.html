@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día de la Mujer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@100;200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Petals canvas -->
+  <canvas id="petal-canvas"></canvas>
+
+  <!-- Atmospheric layers -->
+  <div class="grain"></div>
+  <div class="vignette"></div>
+
+  <!-- Page -->
+  <main class="page">
+
+    <nav class="nav">
+      <div class="nav__rule"></div>
+      <span class="nav__brand">Día Internacional de la Mujer</span>
+      <div class="nav__rule"></div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__kicker">Para ti</div>
+
+      <h1 class="hero__heading">
+        <span class="hero__line hero__line--thin" data-text="Feliz">Feliz</span>
+        <span class="hero__line hero__line--bold" data-text="Día">Día</span>
+      </h1>
+
+      <div class="hero__ornament" aria-hidden="true">
+        <svg viewBox="0 0 320 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 8 Q80 2 160 8 Q240 14 320 8" stroke="url(#gold-line)" stroke-width="1" fill="none"/>
+          <circle cx="160" cy="8" r="4" fill="#D4A017"/>
+          <circle cx="136" cy="8" r="2" fill="#D4A01755"/>
+          <circle cx="184" cy="8" r="2" fill="#D4A01755"/>
+          <defs>
+            <linearGradient id="gold-line" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stop-color="#D4A017" stop-opacity="0"/>
+              <stop offset="30%"  stop-color="#D4A017" stop-opacity="1"/>
+              <stop offset="70%"  stop-color="#D4A017" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#D4A017" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <p class="hero__copy">
+        Te conozco hace poco, pero lo suficiente<br>
+        para saber que este día lo mereces con todo.
+      </p>
+
+      <div class="hero__pill">
+        <span>Que la pases increíble hoy</span>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span class="foot__mark">&#10022;</span>
+      <span class="foot__text">Con cariño</span>
+      <span class="foot__mark">&#10022;</span>
+    </footer>
+
+  </main>
+
+  <script src="petals.js"></script>
+</body>
+</html>
